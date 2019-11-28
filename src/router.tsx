@@ -5,7 +5,7 @@ import Parent from './components/parent/Parent';
 import Comment from './components/comment/Comment';
 import Topics from './components/topic/Topic';
 import About from './components/about/About';
-import ClickTest from '../src/lib/clickCom';
+import ClickTest from '../src/lib/portals';
 import LifeCycle from '../src/lib/lifecycle';
 import CustomTextInput from '../src/lib/callbackRef';
 import './index.scss';
@@ -47,7 +47,7 @@ const Router = (): JSX.Element => (
                 <Route path="/parent" component={Parent} />
                 <Route path="/comment" component={Comment} />
                 <Route path="/topics" component={Topics} />
-                <Route path="/about" component={LifeCycle} />
+                <Route path="/about" component={ClickTest} />
             </Switch>
         </div>
     </HashRouter>

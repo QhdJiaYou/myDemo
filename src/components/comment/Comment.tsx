@@ -21,9 +21,13 @@ function ToolBar(props: myProps) {
 }
 
 class ColorButton extends React.Component<myProps, any> {
+
+    handleClick = (e: any) => {
+        console.log(e.target);
+    }
     render() {
         const color = this.props.color;
-        return <button style={{ColorButton: color}}>{this.props.text}</button>
+        return <button style={{backgroundColor: color}} onClick={this.handleClick}>{this.props.text}</button>
     }
 }
 
